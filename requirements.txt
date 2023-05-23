@@ -1,0 +1,6 @@
+black
+Django
+djangorestframework
+django-celery-results
+django-redis
+locust
