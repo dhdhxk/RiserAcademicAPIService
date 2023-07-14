@@ -196,6 +196,7 @@ class SubmissionViewSet(APIView):
         submission.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
+
 class GradeViewSet(APIView):
     def get(self, request, pk: int = False):
         try:
