@@ -1,6 +1,12 @@
 black
 Django
+config
+mysqlclient
 djangorestframework
+pydantic
+djantic
+markdown
+django-filter
 django-celery-results
 django-redis
 locust

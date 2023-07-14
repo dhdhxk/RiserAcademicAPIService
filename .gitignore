@@ -1,1 +1,6 @@
 venv/*
+.idea/*
+app/.idea/*
+__pycache__/*
+*.pyc
+app/RiserAcademicAPI/migrations/*
