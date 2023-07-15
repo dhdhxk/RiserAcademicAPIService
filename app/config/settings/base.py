@@ -81,7 +81,7 @@ DATABASES = {
         "NAME": "riser_academic_db",
         "USER": "riser_academic_dbu",
         "PASSWORD": "riser_academic_dbp",
-        "HOST": "127.0.0.1",
+        "HOST": "localhost",
         "PORT": "3310",
     }
 }
