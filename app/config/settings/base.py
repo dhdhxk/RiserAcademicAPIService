@@ -82,7 +82,7 @@ DATABASES = {
         "USER": "riser_academic_dbu",
         "PASSWORD": "riser_academic_dbp",
         "HOST": "academic_db",
-        "PORT": "3310",
+        "PORT": "",
     }
 }
 
