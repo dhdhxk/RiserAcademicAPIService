@@ -1,9 +1,9 @@
 from celery import Celery
 
 app = Celery('academic',
-             broker='amqp://',
-             backend='rpc://',
-             include=['RiserAcademicAPI.tasks'])
+    broder="amqp://guest:**@riserrabbitmq:5672//",
+    backend='rpc://',
+    include=['RiserAcademicAPI.tasks'])
 
 # Optional configuration, see the application user guide.
 app.conf.update(
