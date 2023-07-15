@@ -1,7 +1,7 @@
 from celery import Celery
 
 app = Celery('academic',
-    broder="amqp://guest:**@riserrabbitmq:5672//",
+    broker="amqp://guest:**@riserrabbitmq:5672//",
     backend='rpc://',
     include=['RiserAcademicAPI.tasks'])
 
