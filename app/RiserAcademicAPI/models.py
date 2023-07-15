@@ -37,6 +37,15 @@ class Course(models.Model):
         return f'/class/{self.id}'
 
 
+class CourseStudent(models.Model):
+    class Meta:
+        db_table = 'RiserAcademicAPI_course_student'
+
+    id = models.BigAutoField(primary_key=True)
+    student_id = models.BigIntegerField()
+    course = models.ForeignKey(School, db_constraint=False, on_delete=models.DO_NOTHING, related_name='course_student')
+
+
 class Subject(models.Model):
     subject_id = models.BigAutoField(primary_key=True)
     subject_name = models.CharField(max_length=255)
