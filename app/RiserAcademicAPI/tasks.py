@@ -4,6 +4,15 @@ from RiserAcademicAPI.models import CourseStudent
 
 
 @app.task
+def add(x, y):
+    return x + y
+
+
+@app.task
+def mul(x, y):
+    return x * y
+
+
 def get_course_list_by_student_id(student_id):
     course_list = []
     map_list = CourseStudent.objects.filter(student_id=student_id)
