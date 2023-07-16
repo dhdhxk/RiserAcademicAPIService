@@ -13,6 +13,7 @@ def mul(x, y):
     return x * y
 
 
+@app.task
 def get_course_list_by_student_id(student_id):
     course_list = []
     map_list = CourseStudent.objects.filter(student_id=student_id)
