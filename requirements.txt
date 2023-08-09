@@ -11,3 +11,4 @@ celery
 django-celery-results
 django-redis
 locust
+faker
