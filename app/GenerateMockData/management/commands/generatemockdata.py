@@ -33,13 +33,19 @@ class Command(BaseCommand):
             fake_job = fake.job()
             if len(fake_job) < 20:
                 break
+        while 1:
+            Faker.seed(random.random())
+            fake_name = fake.name()
+            if len(fake_name) < 20:
+                break
+
         current_timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return {
             "model": "RiserAcademicAPI.Course",
             "fields": {
                 "course_code": fake_job + " " + str(random.randrange(1, 299)),
                 "course_name": fake.paragraph(nb_sentences=1),
-                "course_room": fake.name() + " " + str(random.randrange(101, 999)),
+                "course_room": fake_name + " " + str(random.randrange(101, 999)),
                 "school_id": random.randrange(1, school_count),
                 "teacher_id": random.randrange(1, 10),
                 "created_at": current_timestamp,
