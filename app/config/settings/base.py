@@ -82,8 +82,8 @@ DATABASES = {
         "NAME": "riser_academic_db",
         "USER": "riser_academic_dbu",
         "PASSWORD": "riser_academic_dbp",
-        "HOST": "academicdb",
-        "PORT": "",
+        "HOST": "riser-academic.csrhnufm2lue.us-west-2.rds.amazonaws.com",
+        "PORT": "3306",
     }
 }
 
