@@ -10,5 +10,6 @@ django-filter
 celery
 django-celery-results
 django-redis
+django-health-check
 locust
 faker
