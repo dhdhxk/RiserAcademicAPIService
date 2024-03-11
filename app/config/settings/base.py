@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "riser_academic_db",
+        "NAME": "dbadmin",
         "USER": "riser_academic_dbu",
-        "PASSWORD": "riser_academic_dbp",
-        "HOST": "riser-mysql-db.cgt9dsytqtlj.us-west-2.rds.amazonaws.com",
+        "PASSWORD": "eLT27l9tJdGrkNROmp6U",
+        "HOST": "riser-mysql-rds.cgt9dsytqtlj.us-west-2.rds.amazonaws.com",
         "PORT": "3306",
     }
 }
