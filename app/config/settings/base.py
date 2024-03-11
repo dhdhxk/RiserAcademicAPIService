@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-q960005#!zq7=q@dwe=$i25+9g9+&bk_rdythd+#_@pmxp8y*n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -80,8 +80,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "dbadmin",
-        "USER": "riser_academic_dbu",
+        "NAME": "riser_academic_db",
+        "USER": "dbadmin",
         "PASSWORD": "eLT27l9tJdGrkNROmp6U",
         "HOST": "riser-mysql-rds.cgt9dsytqtlj.us-west-2.rds.amazonaws.com",
         "PORT": "3306",
